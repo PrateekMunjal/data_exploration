@@ -10,6 +10,11 @@ Welcome to DataExploration's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+DataExploration utils
+===================
+.. automodule:: utils
+   :members:
+
 
 
 Indices and tables

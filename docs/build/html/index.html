@@ -37,6 +37,82 @@
 <div class="toctree-wrapper compound">
 </div>
 </div>
+<div class="section" id="dataexploration-utils">
+<h1>DataExploration utils<a class="headerlink" href="#dataexploration-utils" title="Permalink to this headline">¶</a></h1>
+<span class="target" id="module-utils"></span><dl class="function">
+<dt id="utils.collect_hu_values">
+<code class="descclassname">utils.</code><code class="descname">collect_hu_values</code><span class="sig-paren">(</span><em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.collect_hu_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>Collect stats on Housenfeld units of the masks for scaling and visualizations.</p>
+<p>INPUT:
+mask_paths: list, absolute paths of masks
+data: object of class Data</p>
+<p>OUTPUT:</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.dump_data">
+<code class="descclassname">utils.</code><code class="descname">dump_data</code><span class="sig-paren">(</span><em>img_size</em>, <em>img_res</em>, <em>img_area</em>, <em>CT_paths</em>, <em>save_fpath=None</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.dump_data" title="Permalink to this definition">¶</a></dt>
+<dd><p>Dumps the data in a csv file saved at path: save_fapth.</p>
+<p>INPUT:
+save_fpath: str, Path where we dump all the dataset statistics. Default: None</p>
+<p>OUTPUT:
+None</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.get_dataset_stats">
+<code class="descclassname">utils.</code><code class="descname">get_dataset_stats</code><span class="sig-paren">(</span><em>CT_paths</em>, <em>Mask_paths</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.get_dataset_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>INPUT:
+CT_paths: list, A list containing absolute paths to CTs
+Mask_paths: list, A list containing absolute paths to Masks</p>
+<p>OUTPUT:
+imageSizes, imageResolutions, imageAreas</p>
+<p>NOTE:
+If save_fpath is None, then we do not save the stats.</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.get_nonzero_voxel_count">
+<code class="descclassname">utils.</code><code class="descname">get_nonzero_voxel_count</code><span class="sig-paren">(</span><em>slice_count_all</em>, <em>thresh=0</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.get_nonzero_voxel_count" title="Permalink to this definition">¶</a></dt>
+<dd><p>get voxelcounts &gt; thresh</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.get_size_resolution">
+<code class="descclassname">utils.</code><code class="descname">get_size_resolution</code><span class="sig-paren">(</span><em>sitk_img_object</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.get_size_resolution" title="Permalink to this definition">¶</a></dt>
+<dd><p>Returns the size and voxel spacing of sitk_image_object</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.load_image">
+<code class="descclassname">utils.</code><code class="descname">load_image</code><span class="sig-paren">(</span><em>img_path</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.load_image" title="Permalink to this definition">¶</a></dt>
+<dd><p>This function loads the image specified by img_path.</p>
+<p>INPUT:
+img_path: str, Absolute path of nifti images</p>
+<p>OUTPUT:
+sitk object corresponding to img_path specified</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.pl_get_dataset_stats">
+<code class="descclassname">utils.</code><code class="descname">pl_get_dataset_stats</code><span class="sig-paren">(</span><em>id</em>, <em>data</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.pl_get_dataset_stats" title="Permalink to this definition">¶</a></dt>
+<dd><p>Evaluate size, resolution and area of ct_scan</p>
+</dd></dl>
+
+<dl class="function">
+<dt id="utils.plot_hist">
+<code class="descclassname">utils.</code><code class="descname">plot_hist</code><span class="sig-paren">(</span><em>array</em>, <em>title</em>, <em>x_label</em>, <em>y_label</em>, <em>n_bins=200</em><span class="sig-paren">)</span><a class="headerlink" href="#utils.plot_hist" title="Permalink to this definition">¶</a></dt>
+<dd><p>Plots the histogram where values are specified in array and groups
+the data using n_bins.</p>
+<p>INPUT:
+array: np.ndarray, The array values.
+title: str, the title of plot
+x_label: str, label shown on x-axis
+y_label: str, label shown on y-axis
+n_bins: int, the number of bins</p>
+</dd></dl>
+
+</div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
