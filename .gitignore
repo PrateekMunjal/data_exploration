@@ -1,0 +1,8 @@
+#temp-files
+.vscode/
+
+#data-files
+preprocess/
+
+#Compiled-files
+*.pyc
