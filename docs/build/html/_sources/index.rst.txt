@@ -16,7 +16,6 @@ DataExploration utils
    :members:
 
 
-
 Indices and tables
 ==================
 

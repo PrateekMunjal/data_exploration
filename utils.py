@@ -7,15 +7,15 @@ from data import Data
 import matplotlib.pyplot as plt
 
 def load_image(img_path):
+    """[This function loads the image specified by img_path.]
+
+    Args:
+        img_path ([str]): [Absolute path to the image file]
+
+    Returns:
+        [type]: [SimpleITK object]
     """
-    This function loads the image specified by img_path.
     
-    INPUT:
-    img_path: str, Absolute path of nifti images
-    
-    OUTPUT:
-    sitk object corresponding to img_path specified
-    """ 
     assert type(img_path) == str
     assert os.path.exists(img_path) 
     
