@@ -6,16 +6,15 @@ from tqdm import tqdm
 from data import Data
 import matplotlib.pyplot as plt
 
-def load_image(img_path):
-    """[This function loads the image specified by img_path.]
+def load_image(img_path:str=None)-> sitk.Image:
+    """This function loads the image using sitk given absolute path.
 
     Args:
-        img_path ([str]): [Absolute path to the image file]
+        img_path (str, optional): Absolute path to image file. Defaults to None.
 
     Returns:
-        [type]: [SimpleITK object]
+        sitk.Image: loaded image.
     """
-    
     assert type(img_path) == str
     assert os.path.exists(img_path) 
     

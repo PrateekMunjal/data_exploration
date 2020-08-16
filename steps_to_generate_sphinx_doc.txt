@@ -1,0 +1,31 @@
+# create virtual environment
+# activate it
+
+
+1. pip install sphinx (install > 1.3)
+
+2. sphinx-quickstart (Run this commnand at your project root directory)
+
+3. Some questions will follow after step2:
+    Root path for the documentation: ./docs -- to keep code & doc related files separate
+    autodoc: automatically insert docstrings from modules (y/n): y
+    coverage: checks for documentation coverage (y/n) [n]: y
+
+4. Now if no errors, you will see folder named docs: containing three files index.rst, conf.py, Makefile
+
+5. Uncomment below codesegment in conf.py
+import os
+import sys
+sys.path.insert(0, os.path.abspath('..')) -- this tells sphinx where to look for the codes
+
+5. Now do to docs folder & run make html -- check index.html in build
+
+-- if anything unclear, follow https://medium.com/@eikonomega/getting-started-with-sphinx-autodoc-part-1-2cebbbca5365
+
+To generate pdf:
+
+1. install the following: 
+
+sudo apt-get install texlive-latex-recommended texlive-latex-extra texlive-fonts-recommended latexmk 
+
+now go to docs folder & run >>> make latexpdf -- you should find your **.pdf in docs/build/latex/**.pdf

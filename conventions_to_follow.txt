@@ -1,0 +1,32 @@
+# Docstrings for function description according to Google way.
+To follow google's doc style: https://google.github.io/styleguide/pyguide.html
+
+## WHY WE NEED IT IN SPHINX? 
+
+As .rst is the standard way to use in sphinx, but it is a boring way of writing Docstrings.
+On the other hand,
+- Napoleon is a Sphinx extension that enables Sphinx to parse 
+both NumPy and Google style docstrings - the style recommended by Khan Academy.
+
+- Napoleon is a pre-processor that parses NumPy and Google style docstrings 
+and converts them to reStructuredText before Sphinx attempts to parse them. 
+This happens in an intermediate step while Sphinx is processing the documentation, 
+so it doesn't modify any of the docstrings in your actual source code files.
+
+Code Example
+
+def func(arg1, arg2):
+    """Summary line.
+
+    Extended description of function.
+
+    Args:
+        arg1 (int): Description of arg1
+        arg2 (str): Description of arg2
+
+    Returns:
+        bool: Description of return value
+
+    """
+    return True
+

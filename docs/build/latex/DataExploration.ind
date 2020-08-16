@@ -1,0 +1,33 @@
+\begin{sphinxtheindex}
+\let\bigletter\sphinxstyleindexlettergroup
+\let\spxpagem \sphinxstyleindexpagemain
+\let\spxentry \sphinxstyleindexentry
+\let\spxextra \sphinxstyleindexextra
+
+  \bigletter C
+  \item \spxentry{collect\_hu\_values()}\spxextra{in module utils}, \hyperpage{1}
+
+  \indexspace
+  \bigletter D
+  \item \spxentry{dump\_data()}\spxextra{in module utils}, \hyperpage{1}
+
+  \indexspace
+  \bigletter G
+  \item \spxentry{get\_dataset\_stats()}\spxextra{in module utils}, \hyperpage{1}
+  \item \spxentry{get\_nonzero\_voxel\_count()}\spxextra{in module utils}, \hyperpage{1}
+  \item \spxentry{get\_size\_resolution()}\spxextra{in module utils}, \hyperpage{1}
+
+  \indexspace
+  \bigletter L
+  \item \spxentry{load\_image()}\spxextra{in module utils}, \hyperpage{1}
+
+  \indexspace
+  \bigletter P
+  \item \spxentry{pl\_get\_dataset\_stats()}\spxextra{in module utils}, \hyperpage{1}
+  \item \spxentry{plot\_hist()}\spxextra{in module utils}, \hyperpage{1}
+
+  \indexspace
+  \bigletter U
+  \item \spxentry{utils}\spxextra{module}, \hyperpage{1}
+
+\end{sphinxtheindex}
